@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* FADE IN ON CLICK FUNCTIONALITY */
+@keyframes fade-out {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+/* GOOGLE FONTS */
+
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Satisfy", cursive;
+  font-size: 20px;
+  background-image: url("./images/3674364.jpg");
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  padding: 6px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Satisfy', cursive'
+  font-size: 2.4em;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: white;
+}
+
+li {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #ff5d88;
+  color: white;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+li:before {
+  content: "\200B";
+  position: absolute;
+}
+
+li::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+li button {
+  float: right;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  background-color: #ff9500;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08), 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+  color: white;
+  font-size: 1em;
+}
+
+li button:hover {
+  background-color: #febc5d;
+}
+
+.header{
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  color: white;
+  background-color: rgb(78, 77, 81);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08), 0 5px 10px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.todos {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: rgb(86, 85, 89);
+  border-radius: 5px;
+}
+
+.gentext{
+  color: white;
+  text-align: center;
+}
+
+.todosCompleted {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: rgb(86, 85, 89);
+  border-radius: 5px;
+  padding-top: 20px;
+}
